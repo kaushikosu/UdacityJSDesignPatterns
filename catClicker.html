@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cat Clicker</title>
+
+  </head>
+  <style>
+    img {
+      height: 100%;
+      background-size: cover;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <img id="catImg" src="https://static.pexels.com/photos/20787/pexels-photo.jpg" alt="">
+  </body>
+  <script type="text/javascript">
+    var globalClickCounter = 0;
+    var element = document.getElementById('catImg');
+    element.addEventListener('click',function(){
+      globalClickCounter++;
+      console.log(globalClickCounter);
+    },false);
+  </script>
+</html>
