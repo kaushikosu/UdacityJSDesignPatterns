@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cat Clicker 2</title>
+  </head>
+  <style>
+    #catImg {
+      height: 100%;
+      width: 50%;
+      float: left;
+      top: 10px;
+    }
+    #catImg2 {
+      height: 100%;
+      width: 50%;
+      float: right;
+      top: 10px;
+    }
+  </style>
+  <body>
+    <div class="catView">
+      <div class="catView1">
+        <img id="catImg" title="cat 1" src="https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg" >
+      </div>
+      <div class="catView2">
+        <img id="catImg2" title="cat 2" src="https://static.pexels.com/photos/177809/pexels-photo-177809.jpeg" >
+      </div>
+    </div>
+    <script type="text/javascript">
+      var globalClickCounter = 0;
+      var element = document.getElementsByClassName('catView');
+      element[0].addEventListener('click',function(){
+        globalClickCounter++;
+        console.log('global click counter is '+ globalClickCounter);
+      },false);
+
+    </script>
+  </body>
+</html>
